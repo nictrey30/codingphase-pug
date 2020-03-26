@@ -1,0 +1,25 @@
+{
+  "name": "codingphase-pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nictrey30/codingphase-pug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nictrey30/codingphase-pug/issues"
+  },
+  "homepage": "https://github.com/nictrey30/codingphase-pug#readme",
+  "devDependencies": {
+    "pug": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

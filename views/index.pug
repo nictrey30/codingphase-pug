@@ -1,0 +1,31 @@
+html
+  include includes/head.pug
+  body
+    -
+      let item = 'Joe\'s item'
+      let items = ['item a', 'item b', 'item c']
+    div
+      ul
+        li item 1
+        li item 2
+        li= item
+        li= 2 + ' strings of joe' 
+      p This is a paragraph
+    div
+      ul
+        each val in items
+          li= val
+    div.container.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod incidunt nobis animi omnis ea dolorem, laboriosam est ratione perspiciatis ipsa!
+    input.username(type="text" name="username" required)
+
+    //- mixins allow you to create reusable blocks of code
+    mixin list
+      ul
+        li foo
+        li bar
+
+    include includes/footer.pug
+
+
+

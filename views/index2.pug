@@ -1,0 +1,13 @@
+html
+  include includes/head.pug
+  body
+    - let userLoggedIn = false
+    if userLoggedIn 
+      div.user-info Hey user is logged in
+    else
+      div.user-info Hi, you are not logged in
+
+  include includes/footer.pug
+
+
+
