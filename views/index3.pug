@@ -1,0 +1,18 @@
+html
+  include includes/head.pug
+  body
+    - let stores = ['macys', 'sears', 'frys', 'radio shack']
+    each store in stores
+      p= store
+    mixin link(href, name)
+      a(href=href) #{name}
+    mixin listNames(...names)
+      ul
+      each name in names
+        li= name
+    +listNames('cucu', 'mucu')
+    +listNames('gigi', 'becalli', 'fcsb')
+    +link('http://www.google.ro', 'google')
+
+
+

@@ -3,6 +3,6 @@ let express = require('express'),
 
 app.set('view engine', 'pug');
 app.get('/', function(req, res) {
-  res.render('index2');
+  res.render(__dirname + '/views/other/index');
 });
 app.listen(3000, () => console.log(`started server on port 3000`));

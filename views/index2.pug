@@ -1,13 +1,23 @@
 html
   include includes/head.pug
   body
-    - let userLoggedIn = false
+    - let userLoggedIn = true
     if userLoggedIn 
       div.user-info Hey user is logged in
     else
       div.user-info Hi, you are not logged in
 
-  include includes/footer.pug
+    - let name = "Trey"
+    p.
+      Lorem, ipsum dolor. #{name}
+    p 
+      | charly has a big house 
+      strong style
+      |, he also has an 
+      i nice eagle.
+      
+    p charly has a big house #[strong style], he also has an #[i nice eagle].
+
 
 
 
